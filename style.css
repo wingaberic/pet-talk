@@ -1,0 +1,61 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #fefefe, #e0f7fa);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 420px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+.pets button, .sounds button {
+  min-width: 110px;
+}
+
+#training ul, #behaviors {
+  text-align: left;
+  margin: 10px auto;
+  max-width: 380px;
+}
+
+#interpretation {
+  margin-top: 15px;
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+  .card {
+    margin: 10px 10px;
+    padding: 15px;
+    max-width: 100%;
+  }
+}
