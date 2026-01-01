@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetTalk - Entrena y comunica con tu mascota</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card language">
+    <button onclick="setLanguage('es')">🇪🇸 Español</button>
+    <button onclick="setLanguage('en')">🇺🇸 English</button>
+  </div>
+
+  <div class="card">
+    <h1 id="title"></h1>
+    <p id="subtitle"></p>
+  </div>
+
+  <div class="card">
+    <h2>🐾 Entrenamiento</h2>
+    <div class="pets">
+      <button onclick="showTraining('dog')">🐶 Perro / Dog</button>
+      <button onclick="showTraining('cat')">🐱 Gato / Cat</button>
+    </div>
+    <div id="training"></div>
+  </div>
+
+  <div class="card">
+    <h2 id="behaviorTitle"></h2>
+    <p id="behaviorSubtitle"></p>
+    <div class="pets">
+      <button onclick="selectBehaviorPet('dog')">🐶 Perro / Dog</button>
+      <button onclick="selectBehaviorPet('cat')">🐱 Gato / Cat</button>
+    </div>
+    <div id="behaviors"></div>
+    <div id="interpretation"></div>
+  </div>
+
+  <div class="card">
+    <h2 id="soundTitle"></h2>
+    <p id="soundSubtitle"></p>
+    <div class="sounds">
+      <button onclick="playSound('clicker')">🔘 Clicker</button>
+      <button onclick="playSound('calm')">🌿 Calm</button>
+      <button onclick="playSound('attention')">📣 Attention</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 id="progress"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
